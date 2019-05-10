@@ -30,7 +30,9 @@ class Pokegame extends Component {
     let handTwo = newArray.slice(4)
 		return (
 			<div className="">
+      <Hand>
       <h2>Pokegame</h2>
+      </Hand>
       <Hand className="row">
       <h3 className="col-12">{handScore(handOne)>handScore(handTwo)? "Winning Hand": "Losing Hand"}</h3>
       <h3 className="col-12">{handScore(handOne)}</h3>
