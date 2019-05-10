@@ -5,7 +5,6 @@ import Pokecard from "./Components/Pokecard"
 import Pokegame from "./Components/Pokegame"
 
 function App() {
-  console.log(Pokemon);
   return (
     <div>
       <Pokedex className="container-fluid">

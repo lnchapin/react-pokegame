@@ -20,7 +20,7 @@ class Pokegame extends Component {
     let newArray = newOrder(this.props.poke)
 
     let handOne = newArray.slice(0,4)
-    
+
     let handTwo = newArray.slice(4)
 
     let handScore = (arr) => {
@@ -28,7 +28,6 @@ class Pokegame extends Component {
       arr.forEach(element =>{
         score += element.base_experience
       })
-      console.log(score);
       return score
     }
 
