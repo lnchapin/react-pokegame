@@ -32,7 +32,7 @@ class Pokegame extends Component {
 			<div className="">
       <h2>Pokegame</h2>
       <Hand className="row">
-      <h3 className="col-12">Hand One</h3>
+      <h3 className="col-12">{handScore(handOne)>handScore(handTwo)? "Winning Hand": "Losing Hand"}</h3>
       <h3 className="col-12">{handScore(handOne)}</h3>
       </Hand>
         <div className="row">
@@ -47,7 +47,7 @@ class Pokegame extends Component {
         </div>
 
       <Hand className="row">
-      <h3 className="col-12">Hand Two</h3>
+      <h3 className="col-12">{handScore(handOne)<handScore(handTwo)? "Winning Hand": "Losing Hand"}</h3>
       <h3 className="col-12">{handScore(handTwo)}</h3>
 			</Hand>
       <div className="row">
