@@ -14,6 +14,7 @@ class Pokecard extends Component {
 	render(props) {
     let id = this.props.id.toString()
     let srcId = id.padStart(3, '0')
+    //alternative let padToThree = number =>{number<=999? `00${number}`.slice(-3) : number} and then padToThree(this.props.id)
 		return (
       <div className="col-3">
   			<PokeCard className="card" id={id}>
